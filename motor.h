@@ -135,22 +135,6 @@ getMogoSensor( ) {
 	return 0;
 }
 
-int
-getFourBar( ) {
-	return -SensorValue[I2C_1];
-}
-
-const float fRadius = (2340/(4*PI));
-float
-getCurrentAngle( ) {
-	return (getLeftChassis()-getRightChassis())/fRadius;
-}
-
-float
-fDegreeToRadians( float iInput ) {
-	return (PI/180)*(iInput*2);
-}
-
 //pid sArmPID;
 //int
 //iArmPID( int iDes ) {
